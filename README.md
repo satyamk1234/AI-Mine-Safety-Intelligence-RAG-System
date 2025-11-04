@@ -1,7 +1,7 @@
 # 🛡️ AI-Powered Mine Safety Intelligence System  
 Real-time mining accident monitoring, RAG-based incident analysis, and AI safety assistant
 
-## 🚀 Features
+## Features
 ✅ Mine accident ingestion from DGMS, Twitter, Google News  
 ✅ OCR + LLM extraction from DGMS SANKET PDF  
 ✅ FAISS + RAG search on accident history  
@@ -9,21 +9,21 @@ Real-time mining accident monitoring, RAG-based incident analysis, and AI safety
 ✅ Real-time alerting for fatality spikes  
 ✅ Daily automated incident updates  
 
-## 🧠 System Architecture
+## System Architecture
 PDF → OCR → LLM → CSV → FAISS RAG → Chatbot → Alerts
 Twitter/DGMS/News → Live ingestion → CSV → RAG update → Alerts
 
 
-## 🏗️ Tech Stack
+## Tech Stack
 | Layer | Tool |
 |---|---|
-Language Model | GPT-4 / GPT-5 ready  
+Language Model | GPT-4 
 Vector DB | FAISS  
 Web UI | Streamlit  
 OCR | Tesseract  
 Scraping | Python requests / snscrape  
 
-## 📦 Install
+## Install
 
 ```bash
 git clone https://github.com/<your-username>/mine-safety-intelligence-system
@@ -37,7 +37,7 @@ Add OpenAI key:
 
 cp .env.example .env
 
-🏃 Run
+Run
 
 1️⃣ Fetch live data
 python scripts/fetch_live.py
@@ -51,7 +51,7 @@ python -m src.rag.update_index
 4️⃣ Run chatbot
 streamlit run app/chat_web.py
 
-🗄️ Data Sources
+Data Sources
 
 DGMS India mining accident alerts
 
@@ -61,7 +61,7 @@ Twitter scrape
 
 DGMS SANKET accident statistics (LLM-processed)
 
-🎯 Demo Use Cases
+Demo Use Cases
 
 Mine operators early warning tool
 
@@ -70,7 +70,3 @@ DGMS inspector support
 Mine safety training AI
 
 Risk analytics dashboard
-
-
-
-
