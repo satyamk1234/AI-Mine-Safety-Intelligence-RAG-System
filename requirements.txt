@@ -1,0 +1,11 @@
+pandas
+numpy
+streamlit
+plotly
+camelot-py[cv]
+pdfplumber
+scikit-learn
+spacy
+python-dotenv
+tqdm
+reportlab
